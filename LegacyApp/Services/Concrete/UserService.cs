@@ -29,6 +29,7 @@ namespace LegacyApp
 
             var client = _clientRepository.GetById(clientId);
 
+            //If we use DTO, we can implement here third-party mapper library or custom extension methods for mapping
             var user = new User
             {
                 Client = client,
